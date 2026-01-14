@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block content %}
+
+<form method="post"  action="" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+  
+    <button type="submit">Create product</button>
+</form>
+
+
+
+{% endblock content %}
